@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .bg {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 12px;
+            background: #ddd;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        input, button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header class="bg">
+        <h1>Welcome to Our Website</h1>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This is a section about the company. Here you can add descriptions of your services or company history.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Details about the services provided. You can list new services here with accompanying descriptions or images.</p>
+    </section>
+    <section id="video">
+        <h2>Watch Our Video</h2>
+        <video controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Use the form below to get in touch with us.</p>
+        <form>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2023 All rights reserved.</p>
+    </footer>
+</body>
+</html>
